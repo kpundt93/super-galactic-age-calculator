@@ -68,8 +68,8 @@ describe('AgeCalculator', () => {
   });
 
   // Test #12
-  test('should return a positive number when a user has outlived the life expectancy on a planet', () => {
+  test('should return a positive number when a user has outlived the life expectancy on Mercury', () => {
     const elderlyCalc = new AgeCalculator(90);
-    expect(elderlyCalc.yearsLeft("Mars")).toEqual(9.25);
+    expect(elderlyCalc.yearsLeft("Mercury")).toEqual(72.5);
   });
 });
