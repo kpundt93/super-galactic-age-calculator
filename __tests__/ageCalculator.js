@@ -53,5 +53,10 @@ describe('AgeCalculator', () => {
   test('should correctly return years left to live on Mars', () => {
     expect(calc.yearsLeft("Mars")).toEqual(23.73);
   });
+
+  // Test #10
+  test('should correctly return years left to live on Jupiter', () => {
+    expect(calc.yearsLeft("Jupiter")).toEqual(3.76);
+  });
     
 });
