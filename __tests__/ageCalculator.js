@@ -85,7 +85,7 @@ describe('AgeCalculator', () => {
     expect(elderlyCalc.yearsLeft("Mars")).toEqual(9.25);
   });
 
-  // Test #14
+  // Test #15
   test('should return a positive number when a user has outlived the life expectancy on Jupiter', () => {
     const elderlyCalc = new AgeCalculator(90);
     expect(elderlyCalc.yearsLeft("Jupiter")).toEqual(1.47);
