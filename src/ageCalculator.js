@@ -22,16 +22,28 @@ export class AgeCalculator {
     }
   }
 
-  calculatePlanetLifeExpectancy() {
+  calculatePlanetLifeExpectancy(planet) {
     let lifeExpectancy = 72.6;
-    let planetLifeExpectancy;
-    planetLifeExpectancy = parseFloat(lifeExpectancy/.24).toFixed(2);
-    return planetLifeExpectancy;
+    
+    switch (planet) {
+      case "Mercury":
+        let mercuryLifeExp = parseFloat(lifeExpectancy/.24).toFixed(2);
+        return mercuryLifeExp;
+      case "Venus":
+        let venusLifeExp = parseFloat(lifeExpectancy/.62).toFixed(2);
+        return venusLifeExp;
+      case "Mars":
+        let marsLifeExp = parseFloat(lifeExpectancy/1.88).toFixed(2);
+        return marsLifeExp;
+      case "Jupiter":
+        let jupiterLifeExp = parseFloat(lifeExpectancy/11.86).toFixed(2);
+        return jupiterLifeExp;
+    }
   }
 
   yearsLeft(planet) {
     let planetAge = this.calculator(planet);
-    let planetLifeExpectancy = this.calculatePlanetLifeExpectancy();
+    let planetLifeExpectancy = this.calculatePlanetLifeExpectancy(planet);
     let yearsToLive;
 
     switch(planet) {
@@ -44,7 +56,6 @@ export class AgeCalculator {
             return yearsToLive;
           }
       case "Venus":
-        planetLifeExpectancy = parseFloat(lifeExpectancy/.62).toFixed(2);
         yearsToLive = parseFloat((planetLifeExpectancy - planetAge).toFixed(2));
         
         if (yearsToLive <= 0) {
@@ -53,7 +64,6 @@ export class AgeCalculator {
             return yearsToLive;
           }
       case "Mars":
-        planetLifeExpectancy = parseFloat(lifeExpectancy/1.88).toFixed(2);
         yearsToLive = parseFloat((planetLifeExpectancy - planetAge).toFixed(2));
         
         if (yearsToLive <= 0) {
@@ -62,7 +72,6 @@ export class AgeCalculator {
             return yearsToLive;
           }
       case "Jupiter":
-        planetLifeExpectancy = parseFloat(lifeExpectancy/11.86).toFixed(2);
         yearsToLive = parseFloat((planetLifeExpectancy - planetAge).toFixed(2));
         
         if (yearsToLive <= 0) {
