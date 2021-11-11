@@ -40,6 +40,11 @@ _The application will allow users to input their current age and the average lif
 * If you would like to test the code, return to the project in the terminal and run the command `npm test`
 * If you have the Jest extension installed for VS Code, you can also test the code there.
 
+## Troubleshooting
+
+* If you are receiving errors regrading webpack, try running the command `npm install webpack@4.39.3 --save-dev --save-exact`, then run `npm run build` again
+* If you continue to have issues setting up the environment, try deleting the package-lock.json file and the node_modules folder from the project. Then rebuild the environment by running `npm install` again.
+
 ## Known Bugs
 
 * _No known bugs_
