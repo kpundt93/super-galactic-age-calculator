@@ -8,7 +8,7 @@ export class AgeCalculator {
       case "Mercury":
         return parseFloat((this.age/.24).toFixed(2));
       case "Venus":
-        return ;
+        return parseFloat((this.age/.62).toFixed(2));
       default:
         return false;
     }
