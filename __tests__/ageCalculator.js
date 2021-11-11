@@ -38,4 +38,10 @@ describe('AgeCalculator', () => {
     expect(calc.calculator(100)).toEqual(false);
     expect(calc.calculator(true)).toEqual(false);
   });
+
+  // Test #7
+  test('should correctly return years left to live on Mercury', () => {
+    expect(calc.yearsLeft("Mercury")).toEqual(185.83);
+  });
+    
 });

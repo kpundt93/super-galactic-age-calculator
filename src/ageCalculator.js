@@ -22,4 +22,15 @@ export class AgeCalculator {
     }
   }
 
+  yearsLeft(planet) {
+    let lifeExpectancy = 72.6;
+    let planetAge = this.calculator(planet);
+    let yearsToLive;
+
+    switch(planet) {
+      case "Mercury":
+        return ;
+    }
+  }
+
 }
