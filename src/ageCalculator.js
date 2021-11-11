@@ -25,11 +25,14 @@ export class AgeCalculator {
   yearsLeft(planet) {
     let lifeExpectancy = 72.6;
     let planetAge = this.calculator(planet);
+    let planetLifeExpectancy;
     let yearsToLive;
 
     switch(planet) {
       case "Mercury":
-        return ;
+        let planetLifeExpectancy = parseFloat(lifeExpectancy/.24).toFixed(2);
+        let yearsToLive = parseFloat((planetLifeExpectancy - planetAge).toFixed(2));
+        return yearsToLive;
     }
   }
 
