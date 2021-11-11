@@ -72,4 +72,10 @@ describe('AgeCalculator', () => {
     const elderlyCalc = new AgeCalculator(90);
     expect(elderlyCalc.yearsLeft("Mercury")).toEqual(72.5);
   });
+
+  // Test #13
+  test('should return a positive number when a user has outlived the life expectancy on Venus', () => {
+    const elderlyCalc = new AgeCalculator(90);
+    expect(elderlyCalc.yearsLeft("Venus")).toEqual(28.06);
+  });
 });
