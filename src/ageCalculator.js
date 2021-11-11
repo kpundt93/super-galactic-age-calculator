@@ -10,7 +10,7 @@ export class AgeCalculator {
       case "Venus":
         return parseFloat((this.age/.62).toFixed(2));
       case "Mars":
-        return ;
+        return parseFloat((this.age/1.88).toFixed(2));
       default:
         return false;
     }
