@@ -1,9 +1,13 @@
 import { AgeCalculator } from "../src/ageCalculator.js";
 
 describe('AgeCalculator', () => {
+  let calc;
+  beforeEach(() => {
+    calc = new AgeCalculator(28);
+  });
 
-  test('should correctly...', () => {
-    // const exampleClass = new ExampleClass();
-    // expect().toEqual();
+  // Test #1
+  test('should correctly return a new calc object with the age property', () => {
+    expect(calc.age).toEqual(28);
   });
 });
