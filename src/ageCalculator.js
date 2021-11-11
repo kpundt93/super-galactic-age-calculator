@@ -59,7 +59,12 @@ export class AgeCalculator {
       case "Jupiter":
         planetLifeExpectancy = parseFloat(lifeExpectancy/11.86).toFixed(2);
         yearsToLive = parseFloat((planetLifeExpectancy - planetAge).toFixed(2));
-        return  yearsToLive;
+        
+        if (yearsToLive <= 0) {
+          return  (yearsToLive * -1);
+          } else {
+            return yearsToLive;
+          }
       default:
         return false;
     }
