@@ -1,6 +1,6 @@
-import { ExampleClass } from "../src/project";
+import { AgeCalculator } from "../src/ageCalculator.js";
 
-describe('ExampleClass', () => {
+describe('AgeCalculator', () => {
 
   test('should correctly...', () => {
     // const exampleClass = new ExampleClass();
