@@ -38,6 +38,9 @@ export class AgeCalculator {
         yearsToLive = parseFloat((planetLifeExpectancy - planetAge).toFixed(2));
         return yearsToLive;
       case "Mars":
+        planetLifeExpectancy = parseFloat(lifeExpectancy/1.88).toFixed(2);
+        yearsToLive = parseFloat((planetLifeExpectancy - planetAge).toFixed(2));
+        return yearsToLive;
         return
     }
   }
