@@ -32,7 +32,10 @@ describe('AgeCalculator', () => {
   });
 
   // Test #6, default case
-  test('should return false when not given a planet', () => {
+  test('should return false when not given anything other than Mercury, Venus, Mars, or Jupiter', () => {
     expect(calc.calculator("")).toEqual(false);
+    expect(calc.calculator("Neptune")).toEqual(false);
+    expect(calc.calculator(100)).toEqual(false);
+    expect(calc.calculator(true)).toEqual(false);
   });
 });
