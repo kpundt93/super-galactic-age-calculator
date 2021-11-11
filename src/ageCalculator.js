@@ -45,6 +45,8 @@ export class AgeCalculator {
         planetLifeExpectancy = parseFloat(lifeExpectancy/11.86).toFixed(2);
         yearsToLive = parseFloat((planetLifeExpectancy - planetAge).toFixed(2));
         return yearsToLive;
+      default:
+        return
     }
   }
 

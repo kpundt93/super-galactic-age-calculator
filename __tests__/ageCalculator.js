@@ -59,4 +59,11 @@ describe('AgeCalculator', () => {
     expect(calc.yearsLeft("Jupiter")).toEqual(3.76);
   });
     
+  // Test #11, default case
+  test('should return false when not given anything other than Mercury, Venus, Mars, or Jupiter', () => {
+    expect(calc.yearsLeft("")).toEqual(false);
+    expect(calc.yearsLeft("Neptune")).toEqual(false);
+    expect(calc.yearsLeft(100)).toEqual(false);
+    expect(calc.yearsLeft(true)).toEqual(false);
+  });
 });
