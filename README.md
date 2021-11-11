@@ -1,15 +1,23 @@
-# Template Repository
+# Super Galactic Age Calculator
 
-#### A template repository for JavaScript projects
+#### An application to determine how many years a user has left to live on various planets, based off of current age and life expectancy.
 
 #### By: _**Katie Pundt**_
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* _HTML_
+* _CSS_
+* _Bootstrap_
+* _JavaScript_
+* _jQuery_
+* _npm_
+* _webpack_
+* _eslint_
+* _jest_
+* _popperjs/core_
+* _git_
+* _GitHub_
 
 ## Description
 
