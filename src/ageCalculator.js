@@ -33,6 +33,8 @@ export class AgeCalculator {
         let planetLifeExpectancy = parseFloat(lifeExpectancy/.24).toFixed(2);
         let yearsToLive = parseFloat((planetLifeExpectancy - planetAge).toFixed(2));
         return yearsToLive;
+      case "Venus":
+        return
     }
   }
 
