@@ -1,8 +1,9 @@
-# Super Galactic Age Calculator
-
-#### An application to determine how many years a user has left to live on various planets, based off of current age and life expectancy.
+# _Super Galactic Age Calculator_
 
 #### By: _**Katie Pundt**_
+
+#### _An application to determine how many years a user has left to live on various planets, based off of current age and life expectancy._
+
 
 ## Technologies Used
 
@@ -20,14 +21,24 @@
 * _GitHub_
 
 ## Description
+_The application will allow users to input their current age and the average life expectancy for their demographic. The application will take that input and calculate how many years the user has left to live on Mercury, Venus, Mars, and Jupiter._
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* Navigate to https://github.com/kpundt93/super-galactic-age-calculator
+* Click on the green "Code" button and copy the repository URL or click on the copy button
+* Open the terminal on your desktop
+* Once in the terminal, use it to navigate to your desktop folder
+* Once inside your desktop folder, use the command `git clone https://github.com/kpundt93/super-galactic-age-calculator.git`
+* After cloning the project, navigate into it using the command `cd super-galactic-age-calculator`
+* Use the command `git remote` to confirm the creation of the new local repository
+* Install project dependencies by running the command `npm install`
+* If you receive errors in the terminal, try running `npm install` again, sometimes npm can be finicky
+* After installing npm, run the command `npm run build`
+* Then run the command `npm run start` to start the project server and view the application (use cmd + c to exit the server in the terminal)
+* Open the project with the code editor of your choice
+* If you would like to test the code, return to the project in the terminal and run the command `npm test`
+* If you have the Jest extension installed for VS Code, you can also test the code there.
 
 ## Known Bugs
 
