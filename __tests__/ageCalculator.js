@@ -30,4 +30,9 @@ describe('AgeCalculator', () => {
   test('should correctly return age in Jupiter years', () => {
     expect(calc.calculator("Jupiter")).toEqual(2.36);
   });
+
+  // Test #6, default case
+  test('should return false when not given a planet', () => {
+    expect(calc.calculator("")).toEqual(false);
+  });
 });
