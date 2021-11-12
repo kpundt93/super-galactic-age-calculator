@@ -44,44 +44,25 @@ export class AgeCalculator {
   yearsLeft(planet) {
     let planetAge = this.calculator(planet);
     let planetLifeExpectancy = this.calculatePlanetLifeExpectancy(planet);
-    let yearsToLive;
-
+    let yearsToLive = parseFloat((planetLifeExpectancy - planetAge).toFixed(2));
+    
     switch(planet) {
       case "Mercury":
-        yearsToLive = parseFloat((planetLifeExpectancy - planetAge).toFixed(2));
-
-        if (yearsToLive <= 0) {
-          return  (yearsToLive * -1);
-          } else {
-            return yearsToLive;
-          }
+        break;
       case "Venus":
-        yearsToLive = parseFloat((planetLifeExpectancy - planetAge).toFixed(2));
-        
-        if (yearsToLive <= 0) {
-          return  (yearsToLive * -1);
-          } else {
-            return yearsToLive;
-          }
+        break;
       case "Mars":
-        yearsToLive = parseFloat((planetLifeExpectancy - planetAge).toFixed(2));
-        
-        if (yearsToLive <= 0) {
-          return  (yearsToLive * -1);
-          } else {
-            return yearsToLive;
-          }
+        break;
       case "Jupiter":
-        yearsToLive = parseFloat((planetLifeExpectancy - planetAge).toFixed(2));
-        
-        if (yearsToLive <= 0) {
-          return  (yearsToLive * -1);
-          } else {
-            return yearsToLive;
-          }
+        break;
       default:
         return false;
     }
+
+    if (yearsToLive <= 0) {
+      return  (yearsToLive * -1);
+      } else {
+        return yearsToLive;
+      }
   }
-  
 }
