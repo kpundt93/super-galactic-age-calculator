@@ -7,6 +7,47 @@
   <title>Super Galactic Age Calculator</title>
 </head>
 <body>
+  <div id="container">
+    <h1>Super Galactic Age Calculator</h1>
+    <p id="about">The length of solar years varies from planet to planet. Here on Earth, our solar year is 365 days. Enter your age below to find out your age and life expectancy based on a planet's solar years.</p>
+    <form id="ageInput">
+      <div class="form-group">
+        <label for="age">Enter your age:</label>
+        <input id="age" class="form-control form-control-lg" type="number" min="1" max="120">
+      </div>
+      <button id="calculate" class="btn btn-light" type="submit">Calculate!</button>
+      <button id="reset" class="btn btn-light" type="reset">Reset!</button>
+    </form>
 
+    <div class="row">
+      <div class="card col-sm-5">
+        <div class="card-body">
+          <h3 class="card-title">Mercury</h3>
+          <p class="card-text"></p>
+        </div>
+      </div>
+
+      <div class="card col-sm-5">
+        <div class="card-body">
+          <h3 class="card-title">Venus</h3>
+          <p class="card-text"></p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card col-sm-5">
+        <div class="card-body">
+          <h3 class="card-title">Mars</h3>
+          <p class="card-text"></p>
+        </div>
+      </div>
+      <div class="card col-sm-5">
+        <div class="card-body">
+          <h3 class="card-title">Jupiter</h3>
+          <p class="card-text"></p>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

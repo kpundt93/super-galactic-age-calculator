@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Orbitron:wght@400;700&display=swap');
+
+body {
+  background-image: url("./../assets/images/space-background.jpg");
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#container {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 2em;
+  background: rgba(128, 184, 188, 0.9);
+  color: rgb(33, 37, 41);
+  text-align: center;
+  border-radius: 0.5rem;
+  border:rgb(33, 37, 41) solid 1px;
+}
+
+h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  font-size: 6em;
+  margin-bottom: 0.4em;
+}
+
+#about {
+  font-size: 2em;
+}
+
+#ageInput {
+  max-width: 600px;
+  margin: 0 auto;
+
+}
+
+label {
+  font-size: 1.5em;
+}
+
+#age {
+  border:rgb(33, 37, 41) solid 1px;
+}
+
+#calculate, #reset {
+  margin: 1.5em 0;
+  font-size: 1.5em;
+}
+
+.card {
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+
+.card-title {
+  font-family: 'Orbitron', sans-serif;
+}
