@@ -5,7 +5,7 @@ describe('AgeCalculator', () => {
   beforeEach(() => {
     calc = new AgeCalculator(28);
   });
-
+  
   // Test #1
   test('should correctly return a new calc object with the age property', () => {
     expect(calc.age).toEqual(28);
