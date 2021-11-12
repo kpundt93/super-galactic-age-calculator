@@ -16,10 +16,10 @@ $("form#ageInput").submit(function(event){
   $("p#jupiter-age").text("You are " + calc.calculator("Jupiter") + " years old on Jupiter!");
 
   // get planet life expectancy
-  $("p#mercury-life-exp").text("The average life expectancy on Mercury is " + calc.calculatePlanetLifeExpectancy("Mercury") + ".");
-  $("p#venus-life-exp").text("The average life expectancy on Venus is " + calc.calculatePlanetLifeExpectancy("Venus") + ".");
-  $("p#mars-life-exp").text("The average life expectancy on Mars is " + calc.calculatePlanetLifeExpectancy("Mars") + ".");
-  $("p#jupiter-life-exp").text("The average life expectancy on Jupiter is " + calc.calculatePlanetLifeExpectancy("Jupiter") + ".");
+  $("p#mercury-life-exp").text("The average life expectancy on Mercury is " + calc.calculatePlanetLifeExpectancy("Mercury") + " years.");
+  $("p#venus-life-exp").text("The average life expectancy on Venus is " + calc.calculatePlanetLifeExpectancy("Venus") + " years.");
+  $("p#mars-life-exp").text("The average life expectancy on Mars is " + calc.calculatePlanetLifeExpectancy("Mars") + " years.");
+  $("p#jupiter-life-exp").text("The average life expectancy on Jupiter is " + calc.calculatePlanetLifeExpectancy("Jupiter") + " years.");
 
   // get years left
   if (calc.calculator("Mercury") > calc.calculatePlanetLifeExpectancy("Mercury")) {
