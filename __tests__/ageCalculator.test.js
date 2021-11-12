@@ -1,4 +1,4 @@
-import { AgeCalculator } from "../src/ageCalculator.js";
+import { AgeCalculator } from "../src/js/ageCalculator.js";
 
 describe('AgeCalculator', () => {
   let calc;
