@@ -5,6 +5,10 @@ body {
   font-family: 'Josefin Sans', sans-serif;
 }
 
+div#planets {
+  display: none;
+}
+
 #container {
   max-width: 1200px;
   margin: 0 auto;
@@ -41,8 +45,9 @@ label {
   border:rgb(33, 37, 41) solid 1px;
 }
 
-#calculate, #reset {
+#calculate {
   margin: 1.5em 0;
+  margin-right: 0.5em;
   font-size: 1.5em;
 }
 
