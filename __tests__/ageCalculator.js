@@ -90,4 +90,24 @@ describe('AgeCalculator', () => {
     const elderlyCalc = new AgeCalculator(90);
     expect(elderlyCalc.yearsLeft("Jupiter")).toEqual(1.47);
   });
+
+  // Test #16
+  test('should correctly calculate the life expectancy on Mercury', () => {
+    expect(calc.calculatePlanetLifeExpectancy("Mercury")).toEqual(302.5);
+  });
+
+  // Test #17
+  test('should correctly calculate the life expectancy on Venus', () => {
+    expect(calc.calculatePlanetLifeExpectancy("Venus")).toEqual(117.10);
+  });
+
+  // Test #18
+  test('should correctly calculate the life expectancy on Mars', () => {
+    expect(calc.calculatePlanetLifeExpectancy("Mars")).toEqual(38.62);
+  });
+
+  // Test #19
+  test('should correctly calculate the life expectancy on Jupiter', () => {
+    expect(calc.calculatePlanetLifeExpectancy("Jupiter")).toEqual(6.12);
+  });
 });
